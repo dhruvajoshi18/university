@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initoal-scale=1.0">
+        <title>University-Blog</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Our Certificate & Online Programs</h1>
+        </section>
+
+<!--------------blog page content----------------->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Certificate & Online Programs</h2>
+            <p>we’re so passionate about education that we seek out courses that 
+                can be offered to our learners for free, with no strings attached. 
+                This passion means we also appreciate the work done by educators and 
+                teachers, because we see the impact this vocation has on scores of 
+                people everyday.
+            </p>
+            <br>
+            <p>If teaching and education is your calling, our free courses are ideal because 
+                they are self-paced and don’t require any previous experience or knowledge. If 
+                you are already a qualified teacher, you can take courses to help prevent bullying, 
+                work better with diverse communities or manage pupil-parent separation at school. 
+                If you want to get into another field in education, try a free course in teaching 
+                physical education or how to train other educators. 
+            </p>
+            <br>
+            <p>Working in education requires lifelong education itself as you keep up to date with 
+                new methodologies and take on unforeseen challenges like teaching remotely. 
+                Taking a free course may help you specialize or move to a different school district
+            </p>
+
+            <div class="comment-box">
+                <h3>Leave Your Opinion</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <textarea name="" rows="5" placeholder="Your Opinion"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Auto CAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!--------------footer----------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Our university is an embodiment of the essence of cultural heritage
+        and diversity with a blend of 21st century modernity. <br>The University 
+        is an amalgamation of 20 faculties and 36 institutes, with a 
+        plethora of diploma,<br> undergraduate and post graduate programs in 
+        numerous disciplines.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Dhruva Joshi</p>
+</section>
+
+
+
+
+
+
+
+
+<!-----------Javascript for Toggle Menu------------->        
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0"   
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }    
+        </script>
+    </body>
+</html>
